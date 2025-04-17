@@ -17,11 +17,11 @@ func main() {
 	var g = e % f
 	fmt.Println(g)
 
-	// augmented assignment or operation with itself (variable +=, -=, *=, /=, %=)
+	// augmented assignment or operation with itself (variable +=, -=, *=, /=, %=).
 	var h = 10
 	h += 10 // h = h + 10
 	fmt.Println(h)
-	h -= 15 // h = h - 5
+	h -= 15 // h = h - 15
 	fmt.Println(h)
 	h *= 5 // h = h * 5
 	fmt.Println(h)
@@ -29,4 +29,16 @@ func main() {
 	fmt.Println(h)
 	h %= 5 // h = h % 5
 	fmt.Println(h)
+
+	// unary operators, or operations that act on a single operand
+	var i = 10
+	var j = -i
+	i++ // i = i + 1
+	fmt.Println(i)
+	i-- // i = i - 1
+	fmt.Println(i)
+	j++
+	fmt.Println(j)
+
+	// ++i and --i are not supported
 }

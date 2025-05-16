@@ -8,6 +8,6 @@ func main() {
 		if i%2 == 0 {
 			continue
 		}
-		fmt.Println("even loop ", i)
+		fmt.Println("odd loop ", i)
 	}
 }

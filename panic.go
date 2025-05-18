@@ -17,6 +17,7 @@ func runApp(error bool) {
 		// panic is for stopping the program completely
 		// to catch the error message, we need to use recover
 		panic("Whoops, something went wrong")
+		// when recover is used, the program will continue to run
 	}
 }
 

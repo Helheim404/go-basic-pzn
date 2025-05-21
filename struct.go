@@ -8,6 +8,11 @@ type Customer struct {
 	Age           int
 }
 
+// struct also can be called as method.
+func (customer Customer) sayHello(name string) {
+	fmt.Println("Hello", name, "My name is", customer.Name)
+}
+
 func main() {
 	/*struct cannot be called directly, you must initialize it first.*/
 	// thi is example how to initialzie struct
@@ -34,4 +39,6 @@ func main() {
 	// or
 	budi := Customer{"Budi", "Indonesia", 28}
 	fmt.Println(budi)
+	// sayHello cannot be called directly, because struct is not a function, but it can be called as a method
+	budi.sayHello(joko.Name)
 }
